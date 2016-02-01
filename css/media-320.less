@@ -1,0 +1,75 @@
+@media (max-width: 479px) {
+  body, html {
+    width: 100%;
+    min-width: 340px;
+  }
+  .wrapper {
+    padding: 10px;
+  }
+  .header {
+    background: #282d32;
+  }
+  .header_left_text {
+    overflow: hidden;
+    width: 70%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .logo {
+    width: 20%;
+  }
+  .notification_icons {
+    vertical-align: top;
+    margin-top: 10px;
+    width: 60%;
+    text-align: center;
+    button {
+      i {
+        font-size: 50px;
+      }
+    }
+  }
+  .under_header_block {
+    margin-top: 25px;
+  }
+  .menu_button {
+    display: inline-block;
+    font-size: 36px;
+    width: 15%;
+    vertical-align: top;
+    margin-top: 20px;
+    i {
+      color: #4b5a64;
+    }
+  }
+}
+.mobile_menu {
+  display: block !important;
+  font-size: 0;
+  border-top: #dce1e6 3px solid;
+  a {
+    display: inline-block;
+    width: 33.3%;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    i {
+      color: #8c96a0;
+      font-size: 24px;
+      margin-right: 5px;
+      vertical-align: sub;
+    }
+    &:hover, &.active {
+      color: #ff0033;
+      border-bottom: 2px solid #ff0033;
+      i {
+        color: #ff0033;
+      }
+    }
+  }
+  .count_num {
+    color: #ff0033;
+  }
+}
