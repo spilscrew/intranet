@@ -174,3 +174,71 @@ button {
     bottom: -3px;
   }
 }
+.post_avatar {
+  overflow: hidden;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+  img {
+    position: absolute;
+    width: 100%;
+  }
+}
+.post {
+  background: white;
+  margin-top: 20px;
+  &:nth-of-type(1) {
+    margin-top: 0;
+  }
+}
+.post_user {
+  display: inline-block;
+  margin-top: 15px;
+  .user_name {
+    font-weight: bold;
+  }
+  .user_group {
+    color: #8c96a0;
+  }
+}
+.post_time {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 15px;
+  color: #8c96a0;
+}
+.post_header {
+  padding: 25px;
+}
+.photo_thumb {
+  position: relative;
+  .last_photo_thumb {
+    background: rgba(140,150,160,0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    .photo_plus_symbol {
+      font-size: 110px;
+      color: white;
+      position: absolute;
+      right: 0;
+      top: 30px;
+      line-height: 0;
+      font-weight: 100;
+    }
+    .photo_count {
+      font-size: 14px;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: white;
+    }
+  }
+}
